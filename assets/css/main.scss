@@ -42,11 +42,14 @@
     "vendor/font-awesome/brands"
 ;
 
-.author__avatar img {
-  object-fit: contain !important;
-  border-radius: 0 !important;
-  max-width: 260px;
+.author__avatar img{
+  width: 98%;        /* fill the container */
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
+
+
 
 .float-photo{
   display: block;
