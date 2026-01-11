@@ -15,7 +15,7 @@ Before coming to Northwestern, I received my undergraduate and postgraduate degr
 In my free time, I like to watch (and sometimes play) rugby union. I normally play halfback. I have also played rugby league on a few occasions. I go by Hiro.
 
 ## Contact
-email: [hiroakiendo2030[at]u.northwester.edu](mailto:hiroakiendo2030@u.northwestern.edu)
+email: [hiroakiendo2030[at]u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)
 
 github: [https://github.com/hiroendo1014/](https://github.com/hiroendo1014/)
 
