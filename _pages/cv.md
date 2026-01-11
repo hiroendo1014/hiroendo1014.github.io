@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-# Hiroaki Endo
+## Contact
 
 email: [hiroakiendo2030[at]u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)  
 
