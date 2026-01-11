@@ -45,7 +45,8 @@
 .author__avatar img{
   width: 98%;        /* fill the container */
   height: auto;
-  object-fit: contain;
+  object-fit: contain !important;
+  border-radius: 0 !important;
   display: block;
 }
 
