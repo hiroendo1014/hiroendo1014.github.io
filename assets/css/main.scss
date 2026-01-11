@@ -46,3 +46,21 @@
   object-fit: contain !important;
   border-radius: 0 !important;
 }
+
+.float-photo{
+  float: left;
+  width: 320px;
+  max-width: 45%;
+  margin: 0 0 1rem 1.25rem;
+  border-radius: 12px;
+}
+
+@media (max-width: 700px){
+  .float-photo{
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 1rem auto;
+  }
+}
