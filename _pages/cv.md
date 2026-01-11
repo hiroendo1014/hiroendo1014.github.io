@@ -22,11 +22,11 @@ email: [hiroakiendo2030[at]u.northwestern.edu](mailto:hiroakiendo2030@u.northwes
 
 **University of Cambridge (St John’s College)**, Cambridge, UK  
 *MPhil (Distinction), Economics* (Sep 2023 – Aug 2024)  
-- Ranked 1st in coursework; equivalent to a first-year PhD sequence in the US.
+<!-- - Ranked 1st in coursework; equivalent to a first-year PhD sequence in the US. !-->
 
 **University of Cambridge (St John’s College)**, Cambridge, UK  
 *BA (First Class), Economics* (Oct 2020 – Jun 2023)  
-- Ranked 1st in cohort (out of 154 students); first class in all three years.
+<!-- - Ranked 1st in cohort (out of 154 students); first class in all three years. !-->
 
 **University of Tokyo**, Tokyo, Japan  
 *BA (not completed), Human Sciences I* (Apr 2020 – Aug 2024)
