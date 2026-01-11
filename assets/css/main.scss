@@ -47,6 +47,13 @@
   border-radius: 0 !important;
 }
 
+.about-profile-big .author__avatar img {
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  width: 260px;
+  max-width: 260px;
+}
+
 .float-photo{
   float: left;
   width: 320px;
