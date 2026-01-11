@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "About"
-author_profile: false
+author_profile: true
 redirect_from: 
   - /about/
   - /about.html
@@ -18,5 +18,6 @@ In my free time, I like to watch (and sometimes play) rugby union. I normally pl
 email: [hiroakiendo2030[at]u.northwester.edu](mailto:hiroakiendo2030@u.northwestern.edu)
 
 github: [https://github.com/hiroendo1014/](https://github.com/hiroendo1014/)
-
+<!--
 ![](/images/profile.png){: .float-photo }
+!-->
