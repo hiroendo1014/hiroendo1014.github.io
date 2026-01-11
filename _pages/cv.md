@@ -11,7 +11,7 @@ redirect_from:
 
 # Hiroaki Endo
 
-📧 [hiroakiendo2030[at]u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)  
+email: [hiroakiendo2030[at]u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)  
 
 ---
 
@@ -63,8 +63,8 @@ redirect_from:
 **Benefactors’ and Daiwa Anglo-Japanese Cambridge Scholarships** *(declined)* (Jun 2023)  
 - Full-ride scholarship offers for the MPhil degree at the University of Cambridge.
 
-**Nick Leaton Trophy** (October 2021)
-– University-wide novice Tiddlywinks champion, University of Cambridge.
+**Nick Leaton Trophy** (Oct 2021) 
+- University-wide novice Tiddlywinks champion, University of Cambridge.
 
 <!--
 **Winner**, PG Battle (National Competitive Programming Contest for High Schoolers) (Sep 2019)
