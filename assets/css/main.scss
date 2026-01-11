@@ -45,6 +45,8 @@
 .author__avatar img {
   object-fit: contain !important;
   border-radius: 0 !important;
+  width: 260px;
+  max-width: 260px;
 }
 
 .about-profile-big .author__avatar img {
@@ -55,20 +57,8 @@
 }
 
 .float-photo{
-  float: left;
-  width: 320px;
-  max-width: 45%;
-  margin: 0 2.5rem 1rem 0;
-  border-radius: 12px;
   display: block;
-}
-
-/* Drop below when layout is tight */
-@media (max-width: 900px){
-  .float-photo{
-    float: none;
-    width: 100%;
-    max-width: 420px;
-    margin: 1.5rem auto;
-  }
+  margin: 1.5rem auto;
+  max-width: 420px;
+  width: 100%;
 }
