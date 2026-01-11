@@ -12,6 +12,7 @@ redirect_from:
 ## Contact
 
 email: [hiroakiendo2030[at]u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)  
+github: [https://github.com/hiroendo1014/](https://github.com/hiroendo1014/)
 
 ---
 
