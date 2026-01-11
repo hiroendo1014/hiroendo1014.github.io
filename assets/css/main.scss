@@ -48,19 +48,20 @@
 }
 
 .float-photo{
-  float: left;
+  float: right;
   width: 320px;
   max-width: 45%;
-  margin: 0 0 1rem 1.25rem;
+  margin: 0 2.5rem 1rem 0;
   border-radius: 12px;
+  display: block;
 }
 
-@media (max-width: 700px){
+/* Drop below when layout is tight */
+@media (max-width: 900px){
   .float-photo{
     float: none;
-    display: block;
     width: 100%;
     max-width: 420px;
-    margin: 0 auto 1rem auto;
+    margin: 1.5rem auto;
   }
 }
