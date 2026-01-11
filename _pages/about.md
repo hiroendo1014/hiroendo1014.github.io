@@ -5,7 +5,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-classes: wide
+classes: about-profile-big
 ---
 
 Hi! I am a second-year PhD student in Economics at Northwestern University. My interests are in macroeconomics, particularly in short- to medium-run fluctuations.
