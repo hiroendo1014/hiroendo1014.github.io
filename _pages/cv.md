@@ -9,10 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
-## Contact
-
-email: [hiroakiendo2030[at]u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)  
-github: [https://github.com/hiroendo1014/](https://github.com/hiroendo1014/)
+## Personal details
+**Name:** Hiroaki E. Endo  
+**Date of birth:** October 14, 2001  
+**Email:** [hiroakiendo2030@u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)  
+**GitHub:** <https://github.com/hiroendo1014/>
 
 ---
 
