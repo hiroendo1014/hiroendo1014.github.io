@@ -11,7 +11,7 @@ redirect_from:
 
 ## Personal details
 **Name:** Hiroaki Eric Endo  
-**Date of birth:** October 14, 2001  
+**Born:** October, 2001  
 **Email:** [hiroakiendo2030@u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)  
 **GitHub:** <https://github.com/hiroendo1014/>
 
