@@ -65,7 +65,7 @@ redirect_from:
 **Benefactors’ and Daiwa Anglo-Japanese Cambridge Scholarships** *(declined)* (Jun 2023)  
 - Full-ride scholarship offers for the MPhil degree at the University of Cambridge.
 
-**Nick Leaton Trophy** (Oct 2021) 
+**[Nick Leaton Trophy](https://cutwc.org/TheClub/Tournaments/)** (Oct 2021) 
 - University-wide novice Tiddlywinks champion, University of Cambridge.
 
 <!--
