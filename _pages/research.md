@@ -19,6 +19,7 @@ redirect_from:
   </p>
 </details>
 ---
+
 ## Work in Progress
 
 **“A Macroeconomic Model of Casual Discovery: Endogenising Narratives”**  
