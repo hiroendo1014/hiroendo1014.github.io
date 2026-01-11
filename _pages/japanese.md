@@ -3,8 +3,7 @@ permalink: /japanese/
 title: "日本語"
 author_profile: true
 redirect_from: 
-  - /japanese/
-  - /japanese.html
+
 ---
 
 こんにちは！Northwestern大学経済学博士課程２年の遠藤<ruby>宏哲<rt>ひろあき</rt></ruby>
