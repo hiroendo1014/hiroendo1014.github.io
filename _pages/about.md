@@ -19,5 +19,5 @@ email: [hiroakiendo2030[at]u.northwester.edu](mailto:hiroakiendo2030@u.northwest
 
 github: [https://github.com/hiroendo1014/](https://github.com/hiroendo1014/)
 
-![](/images/profile.png){: .float-photo }
+![](/images/about.JPG){: .float-photo }
 
