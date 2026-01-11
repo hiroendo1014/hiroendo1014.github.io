@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hiroaki E. Endo"
+title: "About"
 author_profile: true
 redirect_from: 
   - /about/
