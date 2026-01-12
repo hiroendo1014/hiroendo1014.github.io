@@ -59,7 +59,7 @@ redirect_from:
 - Awarded based on Tripos performance at the University of Cambridge.
 !-->
 
-**Adam Smith Prize and Winifred Georgina Holgate-Pollard Memorial Prize** (Jun 2023)  
+**[Adam Smith Prize](https://en.wikipedia.org/wiki/Adam_Smith_Prize) and Winifred Georgina Holgate-Pollard Memorial Prize** (Jun 2023)  
 - Awarded for ranking first in the cohort.
 
 **Benefactors’ and Daiwa Anglo-Japanese Cambridge Scholarships** *(declined)* (Jun 2023)  
