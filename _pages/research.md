@@ -28,14 +28,14 @@ redirect_from:
 ---
 ## Pandemic-related Policy Work
 
-**“[Tōkyō de no kansen genshō no yōin: teiryō bunseki](../files/research/fujiinakata/FujiiNakata_SharpDecline_Slides_20211025.pdf)”**  
+**“[Tōkyō de no kansen genshō no yōin: teiryō bunseki](../../files/research/fujiinakata/FujiiNakata_SharpDecline_Slides_20211025.pdf)”**  
 *Factors Behind the Decline in Infections in Tokyo: A Quantitative Analysis*  
 (with S. Beppu, D. Fujii, S. Kawawaki, K. Machi, Y. Maeda, T. Nakata,  
 T. Nishiyama, and W. Okamoto), 2021.  
 - Cited by F. Ohtake at the House of Representatives Budget Committee Public Hearing  
   (February 15, 2022).
 
-**“[Korona byōshō shiyōsū zōka no kansen-keizai e no eikyō](../files/research/fujiinakata/FujiiNakata_ICU_Slides_20210803.pdf)”**  
+**“[Korona byōshō shiyōsū zōka no kansen-keizai e no eikyō](../../files/research/fujiinakata/FujiiNakata_ICU_Slides_20210803.pdf)”**  
 *The Impact of Increased COVID-19 Bed Occupancy on Infections and the Economy*  
 (with D. Fujii and T. Nakata), 2021.
 
