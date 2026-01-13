@@ -25,14 +25,11 @@ github: [https://github.com/hiroendo1014/](https://github.com/hiroendo1014/)
 ![](/images/about.jpg){: .float-photo }
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("sanity");
   alert("JS loaded, button found: " + (btn !== null));
-
-  btn.addEventListener("click", function () {
-    alert("Button clicked ✅");
-  });
-});
+  if (btn) {
+    btn.addEventListener("click", () => alert("Button clicked ✅"));
+  }
   
 async function displayRandomRow(csvUrl, elementId) {
   const response = await fetch(csvUrl);
