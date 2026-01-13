@@ -16,7 +16,7 @@ In my free time, I like to watch (and sometimes play) rugby union. I normally pl
 
 <span style="color:blue">*My random Nikkei stock pick for you*</span>: 
 <span id="random-row"></span>
-
+<button id="sanity">Sanity check</button>
 ## Contact
 email: [hiroakiendo2030[at]u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)
 
@@ -25,6 +25,25 @@ github: [https://github.com/hiroendo1014/](https://github.com/hiroendo1014/)
 ![](/images/about.jpg){: .float-photo }
 
 <script>
+document.getElementById("sanity").addEventListener("click", async () => {
+  alert("JS is running ✅");
+
+  const url = "{{ '/files/misc/nikkei.csv' | relative_url }}";
+  alert("Fetching: " + url);
+
+  try {
+    const r = await fetch(url);
+    alert("Fetch status: " + r.status);
+
+    const text = await r.text();
+    alert("First 200 chars:\n" + text.slice(0, 200));
+
+    document.getElementById("random-row").textContent = "Loaded ✅";
+  } catch (e) {
+    alert("Error: " + e);
+  }
+});
+  
 async function displayRandomRow(csvUrl, elementId) {
   const response = await fetch(csvUrl);
   const text = await response.text();
