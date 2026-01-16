@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 ## Working Paper
-**“Debt Management Meets Monetary Policy: The Rise of the Long End”**  
+**“[Debt Management Meets Monetary Policy: The Rise of the Long End](../../files/research/tps/tps.pdf)”**  
 (with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and Luca Zanotti)
 <details>
   <summary><strong>Abstract</strong></summary>
