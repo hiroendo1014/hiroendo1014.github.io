@@ -80,7 +80,7 @@ redirect_from:
 
 ---
 ## Working Paper
-**“Debt Management Meets Monetary Policy: The Rise of the Long End”**  
+**“When the Treasury Does Monetary Policy”**  
 (with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and Luca Zanotti)
 
 ---
