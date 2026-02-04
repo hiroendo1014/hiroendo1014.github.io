@@ -10,12 +10,12 @@ redirect_from:
 {% include base_path %}
 
 ## Working Paper
-**“[Debt Management Meets Monetary Policy: The Rise of the Long End](../../files/research/tps/tps.pdf)”**  
+**“[When the Treasury Does Monetary Policy](../../files/research/tps/tps.pdf)”**  
 (with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and Luca Zanotti)
 <details>
   <summary><strong>Abstract</strong></summary>
   <p>
-    Do debt management decisions have macroeconomic effects comparable to monetary policy? Using high-frequency movements in interest rate futures around U.S. Treasury issuance announcements, we identify a Treasury policy shock —an unanticipated change in public debt supply across maturities. A shock that raises the five-year Treasury yield by 10 basis points transmits strongly to corporate borrowing rates, tightens credit conditions, and lowers industrial production by about 1.5 percent after one year. These effects closely mirror those of a conventional monetary policy tightening. In contrast to the increase in long-term Treasury yields, the shock has minimal effects on short-term interest rates. We show that this pattern reflects the Federal Reserve’s sterilization of short-term Treasury issuance, while issuance at longer maturities is only partially offset. 
+Debt management decisions have macroeconomic effects comparable to monetary policy. Using high-frequency movements in interest rate futures around U.S. Treasury issuance announcements, we identify a Treasury policy shock—an unanticipated change in public debt supply across maturities. A shock that raises the five-year Treasury yield transmits strongly to corporate borrowing rates, tightens credit conditions, and lowers industrial production significantly. These effects closely mirror those of a conventional monetary policy tightening. The only distinction lies in the yield curve response: while long-term treasury yields increase significantly, the shock has minimal effects on short-term interest rates. We show that this pattern reflects the Federal Reserve’s sterilization of short-term Treasury issuance, while issuance at longer maturities is only partially offset.  
   </p>
 </details>
 ---
