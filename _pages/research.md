@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 ## Working Paper
-**“[When the Treasury Does Monetary Policy](../../files/research/tps/tps.pdf)”**  
+**“[When the Treasury Does Monetary Policy](../../files/research/tps/EPSZ.pdf)”**  
 (with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and Luca Zanotti)
 <details>
   <summary><strong>Abstract</strong></summary>
