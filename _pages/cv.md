@@ -13,7 +13,8 @@ redirect_from:
 **Name:** Hiroaki Eric Endo  
 **Born:** October, 2001  
 **Email:** [hiroakiendo2030@u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)  
-**GitHub:** <https://github.com/hiroendo1014/>
+**GitHub:** <https://github.com/hiroendo1014/> 
+
 **[Click here for PDF](../../files/CV_full.pdf)** 
 
 ---
