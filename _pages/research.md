@@ -19,13 +19,6 @@ Debt management decisions have macroeconomic effects comparable to monetary poli
   </p>
 </details>
 
-**“[Bargaining Power and the Neutrality–Non-Neutrality of Money](../../files/research/excess_demand_supply/draft_march.pdf)”**  
-<details>
-<summary><strong>Abstract</strong></summary>
-<p>
-This paper studies how buyer–seller bargaining powers shape monetary non–neutrality. When sellers have stronger bargaining power, the economy operates in an excess-supply regime and the Phillips curve is upward-sloping. When buyers have a stronger bargaining power, the economy operates in an excess-demand regime, and the Phillips curve is downward-sloping. Bargaining power smoothly parameterises the transition between the two regimes. In the knife-edge case, when the two powers cancel out, the Phillips curve becomes vertical and the economy approximates the flexible-price outcome. In this case, inflation is no longer costly. By allowing bargaining power to vary, the model places the insights of the general disequilibrium literature on an equilibrium footing. 
-</p>
-</details>
 ---
 
 ## Work in Progress
