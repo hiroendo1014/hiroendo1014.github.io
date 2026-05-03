@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-## Working Paper
+## Working Papers
 **“[When the Treasury Does Monetary Policy](../../files/research/tps/EPSZ.pdf)”**  
 (with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and Luca Zanotti)
 <details>
@@ -17,6 +17,14 @@ redirect_from:
   <p>
 Debt management decisions have macroeconomic effects comparable to monetary policy. Using high-frequency movements in interest rate futures around U.S. Treasury issuance announcements, we identify a Treasury policy shock—an unanticipated change in public debt supply across maturities. A shock that raises the five-year Treasury yield transmits strongly to corporate borrowing rates, tightens credit conditions, and lowers industrial production significantly. These effects closely mirror those of a conventional monetary policy tightening. The only distinction lies in the yield curve response: while long-term treasury yields increase significantly, the shock has minimal effects on short-term interest rates. We show that this pattern reflects the Federal Reserve’s sterilization of short-term Treasury issuance, while issuance at longer maturities is only partially offset.  
   </p>
+</details>
+
+**“[Bargaining Power and the Neutrality–Non-Neutrality of Money](../../files/research/excess_demand_supply/draft_march.pdf)”**  
+<details>
+<summary><strong>Abstract</strong></summary>
+<p>
+This paper studies how buyer–seller bargaining powers shape monetary non–neutrality. When sellers have stronger bargaining power, the economy operates in an excess-supply regime and the Phillips curve is upward-sloping. When buyers have a stronger bargaining power, the economy operates in an excess-demand regime, and the Phillips curve is downward-sloping. Bargaining power smoothly parameterises the transition between the two regimes. In the knife-edge case, when the two powers cancel out, the Phillips curve becomes vertical and the economy approximates the flexible-price outcome. In this case, inflation is no longer costly. By allowing bargaining power to vary, the model places the insights of the general disequilibrium literature on an equilibrium footing. 
+</p>
 </details>
 
 ---
