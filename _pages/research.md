@@ -11,7 +11,7 @@ redirect_from:
 
 ## Working Papers
 **“[When the Treasury Does Monetary Policy](../../files/research/tps/EPSZ.pdf)”**  
-(with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and [Luca Zanotti](https://lzanotti1999.github.io/))
+( with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and [Luca Zanotti](https://lzanotti1999.github.io/) )
 <details>
   <summary><strong>Abstract</strong></summary>
   <p>
