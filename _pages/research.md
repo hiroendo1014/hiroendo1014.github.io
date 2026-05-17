@@ -19,7 +19,7 @@ Debt management decisions have macroeconomic effects comparable to monetary poli
   </p>
 </details>
 
-**“[Bargaining Power and the Neutrality–Non-Neutrality of Money](../../files/research/excess_demand_supply/draft_march.pdf)”**  
+**“[Bargaining Power and the Neutrality–Non-Neutrality of Money](../../files/research/excess_demand_supply/draft_may.pdf)”**  
 <details>
 <summary><strong>Abstract</strong></summary>
 <p>
