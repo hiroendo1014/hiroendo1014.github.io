@@ -10,12 +10,12 @@ redirect_from:
 {% include base_path %}
 
 ## Working Papers
-**“[When the Treasury Does Monetary Policy](../../files/research/tps/EPSZ.pdf)”**  
+**“[The Treasury Does Monetary Policy](../../files/research/tps/EPSZ.pdf)”**  
 ( with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and [Luca Zanotti](https://lzanotti1999.github.io/) )
 <details>
   <summary><strong>Abstract</strong></summary>
   <p>
-Debt management decisions have macroeconomic effects comparable to monetary policy. Using high-frequency movements in interest rate futures around U.S. Treasury issuance announcements, we identify a Treasury policy shock—an unanticipated change in public debt supply across maturities. A shock that raises the five-year Treasury yield transmits strongly to corporate borrowing rates, tightens credit conditions, and lowers industrial production significantly. These effects closely mirror those of a conventional monetary policy tightening. The only distinction lies in the yield curve response: while long-term treasury yields increase significantly, the shock has minimal effects on short-term interest rates. We show that this pattern reflects the Federal Reserve’s sterilization of short-term Treasury issuance, while issuance at longer maturities is only partially offset.  
+Debt management decisions have macroeconomic effects comparable to those of monetary policy. Using high-frequency movements in Treasury futures around U.S. Treasury issuance announcements, we identify a Treasury policy shock—an unanticipated change in the supply of public debt across maturities. A shock that raises the five-year Treasury yield increases corporate borrowing rates, tightens financial conditions, and lowers industrial production. These effects are very similar to those of a conventional monetary policy shock. In this sense, the Treasury does monetary policy. In contrast to a monetary policy shock, our Treasury policy shock has minimal effects on short-term rates. This pattern arises because the Federal Reserve sterilizes the issuance of short-term debt, while only partially offsetting issuance at longer maturities.
   </p>
 </details>
 
