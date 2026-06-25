@@ -11,4 +11,4 @@ redirect_from:
 
 Northwestern大学で経済学博士課程を始める前は[東進海外大学支援制度](https://www.toshin.com/USuniv/)にご支援いただき、St. John's College, University of Cambridgeで学士・修士号を取得しました。
 
-趣味はラグビー観戦（ときたまプレー）です。ポジションはスクラムハーフです。ラグビー・リーグをプレーしたことも数回あります。
+趣味はラグビー観戦（ときたま[プレー](https://rugby-rp.com/2016/06/10/column/16383)）です。ポジションはスクラムハーフです。ラグビー・リーグをプレーしたことも数回あります。
