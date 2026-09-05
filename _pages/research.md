@@ -17,6 +17,7 @@ redirect_from:
 <p>
 This paper studies how the U.S. Treasury manages debt maturity and how these decisions affect aggregate economic activity. We estimate a Treasury maturity rule and find that the Treasury systematically shortens debt maturity when economic activity weakens or borrowing needs increase. We then identify a debt maturity shock as the residual from this rule. An unexpected shift toward longer-term debt issuance contracts economic activity by raising long-term borrowing costs, which spill over to broader financial markets and tighten financial conditions. Debt maturity also shapes the transmission of fiscal policy: counterfactual analysis shows that financing government spending at longer maturities dampens its expansionary effects.
 </p>
+</details>
   
 **“[The Treasury Does Monetary Policy](../../files/research/tps/EPSZ.pdf)”**  
 ( with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and [Luca Zanotti](https://lzanotti1999.github.io/) )
