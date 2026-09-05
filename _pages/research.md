@@ -20,7 +20,7 @@ This paper studies how the U.S. Treasury manages debt maturity and how these dec
 </details>
   
 **“[The Treasury Does Monetary Policy](../../files/research/tps/EPSZ.pdf)”**  
-( with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and [Luca Zanotti](https://lzanotti1999.github.io/) )
+(with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and [Luca Zanotti](https://lzanotti1999.github.io/))
 <details>
   <summary><strong>Abstract</strong></summary>
   <p>
