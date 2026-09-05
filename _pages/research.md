@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 ## Working Papers
-**"[The Treasury Maturity Rule](../../files/research/erz/erz.pdf)"
+**"[The Treasury Maturity Rule](../../files/research/erz/erz.pdf)"**
 (with  [Luca Zanotti](https://lzanotti1999.github.io/), and [Ramya Raghavan](https://ramyaraghavan.com/))
 <details>
   <summary><strong>Abstract</strong></summary>
