@@ -19,4 +19,4 @@ In my free time, I like to watch — and sometimes [play](https://www.varsity.co
 
 **GitHub:** [github.com/hiroendo1014](https://github.com/hiroendo1014/)
 
-![](/images/about.jpg){: .float-photo }
+![](/images/about.JPG){: .float-photo }
