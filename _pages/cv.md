@@ -39,6 +39,8 @@ redirect_from:
 
 ## Experience
 
+**Research Assistant**, Prof. George-Marios Angeletos (Jun 2026 – Aug 2026)
+
 **Research Assistant**, Prof. Taisuke Nakata (Jun 2020 – Aug 2024)
 
 **Research Assistant**, Dr. Isabelle Roland (Jun 2022 – Aug 2022)
@@ -47,8 +49,8 @@ redirect_from:
 
 ## Awards and Scholarships
 
-**HUMAI Fellowship** (Aug 2025 – Mar 2026)  
-- Research grant (¥1,000,000 ≈ \$6.8k) from the Nippon Foundation and DWANGO Co., Ltd.
+**HUMAI Fellowship** (Aug 2025 – Mar 2026, Jun 2026 – Mar 2027)  
+- Research grant (¥1,000,000 ≈ \$6.8k per year) from the Nippon Foundation and DWANGO Co., Ltd.
 
 **JASSO Scholarship** (Sep 2025 – Aug 2028)  
 - Partial stipend support.
@@ -81,9 +83,15 @@ redirect_from:
 !-->
 
 ---
-## Working Paper
+## Working Papers
+
+**“The Treasury Policy Rule”**  
+(with Ramya Raghavan and Luca Zanotti)
+
 **“When the Treasury Does Monetary Policy”**  
 (with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and Luca Zanotti)
+
+**“Bargaining Power and the Neutrality–Non-Neutrality of Money”**
 
 ---
 
@@ -106,8 +114,14 @@ T. Nishiyama, and W. Okamoto), 2021.
 
 ## Work in Progress
 
-**“A Macroeconomic Model of Casual Discovery: Endogenising Narratives”**  
+**“A Macroeconomic Model of Causal Discovery: Endogenising Narratives”**  
 (with [Dalton Rongxuan Zhang](https://sites.google.com/view/daltonrxzhang/))
+
+---
+
+## Seminar Presentations
+
+**2026** — Sophia University
 
 ---
 
