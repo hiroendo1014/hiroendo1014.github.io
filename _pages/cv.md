@@ -39,7 +39,7 @@ redirect_from:
 
 ## Experience
 
-**Research Assistant**, Prof. George-Marios Angeletos (Jun 2026 – Aug 2026)
+**Research Assistant**, Prof. George-Marios Angeletos (Jun 2026 – present)
 
 **Research Assistant**, Prof. Taisuke Nakata (Jun 2020 – Aug 2024)
 
