@@ -7,7 +7,7 @@ redirect_from:
   - /about.html 
 ---
 
-Hi! I am a second-year PhD student in Economics at Northwestern University. My interests are in macroeconomics, particularly short- to medium-run fluctuations.
+Hi! I am a third-year PhD student in Economics at Northwestern University. My interests are in macroeconomics, particularly short- to medium-run fluctuations.
 
 Before coming to Northwestern, I received my undergraduate and postgraduate degrees from St. John's College, University of Cambridge, where I was fortunate to be funded by [Nagase Bros., Inc.](https://www.bloomberg.com/profile/company/9733:JP) throughout my four years there.
 
