@@ -41,6 +41,9 @@ This paper studies how buyer–seller bargaining powers shape monetary non–neu
 
 ## Work in Progress
 
+**"Rotemberg Meets Barro-Grossman"**
+(with [George-Marios Angeletos](https://sites.northwestern.edu/angeletos/))
+
 **“A Macroeconomic Model of Casual Discovery: Endogenising Narratives”**  
 (with [Dalton Rongxuan Zhang](https://sites.google.com/view/daltonrxzhang/))
 
