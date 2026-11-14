@@ -102,12 +102,12 @@ author_profile: true
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(245, 212, 138, 0.3);
     border-radius: 18px;
-    padding: 1.5em 1.5em 1.25em;
+    padding: 1.4em 1.1em 1.2em;
     text-align: center;
     box-shadow: 0 0 40px rgba(137, 84, 255, 0.25), inset 0 0 30px rgba(245, 212, 138, 0.05);
     backdrop-filter: blur(4px);
   }
-  .lucky-label {
+  #lucky-page .lucky-label {
     font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
     font-size: 0.72em;
     letter-spacing: 0.18em;
@@ -121,13 +121,13 @@ author_profile: true
     color: #f5d48a;
     text-shadow: 0 0 24px rgba(245, 212, 138, 0.7);
   }
-  .lucky-name {
+  #lucky-page .lucky-name {
     font-size: 2em;
     font-weight: 700;
     margin: 0.15em 0 0;
     line-height: 1.15;
   }
-  .lucky-sub {
+  #lucky-page .lucky-sub {
     font-size: 1.1em;
     color: #c9c2ef;
     margin: 0.25em 0 0;
@@ -154,9 +154,10 @@ author_profile: true
     background: linear-gradient(135deg, #f5d48a, #e7a9ff);
     color: #1a1145 !important;
     text-decoration: none !important;
+    white-space: nowrap;
   }
   .lucky-link:hover { filter: brightness(1.08); }
-  .lucky-fineprint {
+  #lucky-page .lucky-fineprint {
     font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
     font-size: 0.72em;
     line-height: 1.5;
