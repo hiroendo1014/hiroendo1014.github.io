@@ -9,13 +9,13 @@ redirect_from:
 
 {% include base_path %}
 
-## Personal details
+## Personal Details
 **Name:** Hiroaki Eric Endo  
-**Born:** October, 2001  
+**Born:** October 2001  
 **Email:** [hiroakiendo2030@u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)  
-**GitHub:** <https://github.com/hiroendo1014/> 
+**GitHub:** [github.com/hiroendo1014](https://github.com/hiroendo1014/)
 
-**[Click here for PDF](../../files/CV_full.pdf)** 
+**[Download CV (PDF)](../../files/CV_full.pdf)**
 
 ---
 
@@ -50,13 +50,13 @@ redirect_from:
 ## Awards and Scholarships
 
 **HUMAI Fellowship** (Aug 2025 – Mar 2026, Jun 2026 – Mar 2027)  
-- Research grant (¥1,000,000 ≈ \$6.8k per year) from the Nippon Foundation and DWANGO Co., Ltd.
+- Research grant of ¥1,000,000 (≈ \$6,800) per year from the Nippon Foundation and DWANGO Co., Ltd.
 
 **JASSO Scholarship** (Sep 2025 – Aug 2028)  
 - Partial stipend support.
 
 **Toshin Study Abroad Scholarship** (Oct 2020 – Jun 2024)  
-- Full-ride scholarship covering tuition and living expenses at the University of Cambridge.
+- Full scholarship covering tuition and living expenses at the University of Cambridge.
 
 <!--
 **Davidson Scholarship and Wright Prize** (Jul 2021 – Jun 2024)  
@@ -67,10 +67,10 @@ redirect_from:
 - Awarded for ranking first in the cohort.
 
 **Benefactors’ and Daiwa Anglo-Japanese Cambridge Scholarships** *(declined)* (Jun 2023)  
-- Full-ride scholarship offers for the MPhil degree at the University of Cambridge.
+- Full scholarship offers for the MPhil at the University of Cambridge.
 
-**[Nick Leaton Trophy](https://cutwc.org/TheClub/Tournaments/)** (Oct 2021) 
-- University-wide novice Tiddlywinks champion, University of Cambridge.
+**[Nick Leaton Trophy](https://cutwc.org/TheClub/Tournaments/)** (Oct 2021)  
+- University-wide novice tiddlywinks champion, University of Cambridge.
 
 <!--
 **Winner**, PG Battle (National Competitive Programming Contest for High Schoolers) (Sep 2019)
@@ -85,11 +85,11 @@ redirect_from:
 ---
 ## Working Papers
 
-**“The Treasury Policy Rule”**  
-(with Ramya Raghavan and Luca Zanotti)
+**“[The Treasury Maturity Rule](../../files/research/erz/erz.pdf)”**  
+(with [Ramya Raghavan](https://ramyaraghavan.com/) and [Luca Zanotti](https://lzanotti1999.github.io/))
 
-**“When the Treasury Does Monetary Policy”**  
-(with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and Luca Zanotti)
+**“[The Treasury Does Monetary Policy](../../files/research/tps/EPSZ.pdf)”**  
+(with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and [Luca Zanotti](https://lzanotti1999.github.io/))
 
 **“Bargaining Power and the Neutrality–Non-Neutrality of Money”**
 
@@ -127,5 +127,4 @@ T. Nishiyama, and W. Okamoto), 2021.
 
 ## Miscellaneous
 
-- **Licenses & certifications**: Black belt in Judo  
-  (A team, 2024 Varsity Match against Oxford)
+- **Judo:** Black belt; competed for the Cambridge A team in the 2024 Varsity Match against Oxford.
