@@ -170,7 +170,6 @@ author_profile: true
     font-size: 1.1em;
     color: #c9c2ef;
   }
-  .lucky-footer strong { color: #f5d48a; font-variant-numeric: tabular-nums; }
   .lucky-disclaimer {
     font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
     font-size: 0.72em;
@@ -207,8 +206,7 @@ author_profile: true
   </div>
 
   <div class="lucky-footer">
-    Next reading in <strong id="lucky-countdown">--:--</strong>
-    <div class="lucky-disclaimer">Picked at random for fun. Not investment advice.</div>
+    <div class="lucky-disclaimer">Not investment advice.</div>
   </div>
 </div>
 
@@ -283,10 +281,6 @@ author_profile: true
   }
 
   function tick() {
-    var left = HOUR - (Date.now() % HOUR);
-    var m = Math.floor(left / 60000);
-    var s = Math.floor((left % 60000) / 1000);
-    $("lucky-countdown").textContent = m + ":" + (s < 10 ? "0" : "") + s;
     if (Math.floor(Date.now() / HOUR) !== shownHour) { render(); }
   }
 
@@ -339,7 +333,6 @@ author_profile: true
 
   drawWheel();
   render();
-  tick();
   setInterval(tick, 1000);
 })();
 </script>
