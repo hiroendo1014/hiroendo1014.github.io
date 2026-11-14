@@ -12,7 +12,8 @@ redirect_from:
 ## Working Papers
 
 **“[The Treasury Maturity Rule](../../files/research/erz/erz.pdf)”**  
-(with [Ramya Raghavan](https://ramyaraghavan.com/) and [Luca Zanotti](https://lzanotti1999.github.io/))
+(with [Ramya Raghavan](https://ramyaraghavan.com/) and [Luca Zanotti](https://lzanotti1999.github.io/))  
+[[Slides](../../files/research/erz/erz_slides.pdf)]
 <details>
   <summary><strong>Abstract</strong></summary>
   <p>
