@@ -91,8 +91,6 @@ redirect_from:
 **“[The Treasury Does Monetary Policy](../../files/research/tps/EPSZ.pdf)”**  
 (with [Kevin Pallara](https://sites.google.com/view/kpallara/), Massimiliano Sfregola, and [Luca Zanotti](https://lzanotti1999.github.io/))
 
-**“Bargaining Power and the Neutrality–Non-Neutrality of Money”**
-
 ---
 
 <!--
@@ -114,7 +112,10 @@ T. Nishiyama, and W. Okamoto), 2021.
 
 ## Work in Progress
 
-**“A Macroeconomic Model of Causal Discovery: Endogenising Narratives”**  
+**“Rotemberg Meets Barro–Grossman”**  
+(with [George-Marios Angeletos](https://sites.northwestern.edu/angeletos/))
+
+**“A Macroeconomic Model of Causal Discovery: Endogenizing Narratives”**  
 (with [Dalton Rongxuan Zhang](https://sites.google.com/view/daltonrxzhang/))
 
 ---

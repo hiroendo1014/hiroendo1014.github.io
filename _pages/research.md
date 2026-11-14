@@ -36,7 +36,7 @@ Debt management decisions have macroeconomic effects comparable to those of mone
 **“Rotemberg Meets Barro–Grossman”**  
 (with [George-Marios Angeletos](https://sites.northwestern.edu/angeletos/))
 
-**“A Macroeconomic Model of Causal Discovery: Endogenising Narratives”**  
+**“A Macroeconomic Model of Causal Discovery: Endogenizing Narratives”**  
 (with [Dalton Rongxuan Zhang](https://sites.google.com/view/daltonrxzhang/))
 
 ---
