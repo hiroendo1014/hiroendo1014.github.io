@@ -176,6 +176,62 @@ author_profile: true
     color: #8f88b8;
     margin-top: 0.5em;
   }
+  .lucky-card { position: relative; }
+  .lucky-card::before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border: 1px solid rgba(245, 212, 138, 0.22);
+    border-radius: 13px;
+    pointer-events: none;
+  }
+  .lucky-flip {
+    perspective: 1400px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .lucky-flip-inner {
+    display: grid;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+    transform-style: preserve-3d;
+  }
+  .lucky-flip.is-flipped .lucky-flip-inner { transform: rotateY(180deg); }
+  .lucky-flip .lucky-card {
+    grid-area: 1 / 1;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backdrop-filter: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .lucky-flip .lucky-back { transform: rotateY(180deg); }
+  .lucky-flip:not(.is-flipped) .lucky-back,
+  .lucky-flip.is-flipped .lucky-front { pointer-events: none; }
+  .lucky-flip:hover .lucky-card {
+    border-color: rgba(245, 212, 138, 0.6);
+    box-shadow: 0 0 60px rgba(137, 84, 255, 0.45), inset 0 0 30px rgba(245, 212, 138, 0.08);
+  }
+  .lucky-flip-btn {
+    display: block;
+    margin: 0.9em auto 0;
+    padding: 0.2em 0.6em;
+    background: none;
+    border: 0;
+    border-radius: 6px;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.68em;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #e7a9ff;
+    cursor: pointer;
+  }
+  .lucky-flip-btn:hover { color: #f5d48a; }
+  .lucky-flip-btn:focus-visible { outline: 2px solid #f5d48a; outline-offset: 2px; }
+  .lucky-glyph.is-text { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 700; }
+  .lucky-glyph.is-long { font-size: 3.2em; line-height: 1.55; }
+  @media (prefers-reduced-motion: reduce) {
+    .lucky-flip-inner { transition: none; }
+  }
 </style>
 
 <div class="lucky-sky" aria-hidden="true">
@@ -195,13 +251,27 @@ author_profile: true
       <p class="lucky-sub" id="lucky-sign-dates"></p>
     </div>
 
-    <div class="lucky-card">
-      <p class="lucky-label">This hour's lucky stock</p>
-      <div class="lucky-glyph">🪄</div>
-      <p class="lucky-name" id="lucky-stock-name">…</p>
-      <span class="lucky-code" id="lucky-stock-code"></span><br>
-      <a class="lucky-link" id="lucky-stock-link" href="https://www.bloomberg.com/" target="_blank" rel="noopener">View on Bloomberg ↗</a>
-      <p class="lucky-fineprint">This is a <strong>Bloomstickberg</strong> pick: a real link to <span id="lucky-stock-url">bloomberg.com</span>, but the stock was chosen by a magic stick, not by Bloomberg.</p>
+    <div class="lucky-flip" id="lucky-flip">
+      <div class="lucky-flip-inner">
+        <div class="lucky-card lucky-front" id="lucky-front">
+          <p class="lucky-label">This hour's lucky stock</p>
+          <div class="lucky-glyph">🪄</div>
+          <p class="lucky-name" id="lucky-stock-name">…</p>
+          <span class="lucky-code" id="lucky-stock-code"></span><br>
+          <a class="lucky-link" id="lucky-stock-link" href="https://www.bloomberg.com/" target="_blank" rel="noopener">View on Bloomberg ↗</a>
+          <p class="lucky-fineprint">This is a <strong>Bloomstickberg</strong> pick: a real link to <span id="lucky-stock-url">bloomberg.com</span>, but the stock was chosen by a magic stick, not by Bloomberg.</p>
+          <button type="button" class="lucky-flip-btn" id="lucky-flip-to-back">↻ Tap to flip the card</button>
+        </div>
+        <div class="lucky-card lucky-back" id="lucky-back" aria-hidden="true">
+          <p class="lucky-label">This hour's lucky currency</p>
+          <div class="lucky-glyph is-text" id="lucky-fx-glyph">¤</div>
+          <p class="lucky-name" id="lucky-fx-name">…</p>
+          <span class="lucky-code" id="lucky-fx-code"></span><br>
+          <a class="lucky-link" id="lucky-fx-link" href="https://www.bloomberg.com/" target="_blank" rel="noopener" tabindex="-1">View on Bloomberg ↗</a>
+          <p class="lucky-fineprint">Another <strong>Bloomstickberg</strong> pick: a real link to <span id="lucky-fx-url">bloomberg.com</span> for its exchange rate with the US dollar, chosen by the same magic stick.</p>
+          <button type="button" class="lucky-flip-btn" id="lucky-flip-to-front" tabindex="-1">↻ Tap to flip back</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -248,6 +318,21 @@ author_profile: true
     ["4901", "FUJIFILM Holdings"], ["6503", "Mitsubishi Electric"],
     ["7011", "Mitsubishi Heavy Industries"]
   ];
+  var CURRENCIES = [
+    ["EUR", "€", "Euro", "EURUSD"], ["GBP", "£", "British Pound", "GBPUSD"],
+    ["JPY", "¥", "Japanese Yen", "USDJPY"], ["CHF", "Fr", "Swiss Franc", "USDCHF"],
+    ["CAD", "C$", "Canadian Dollar", "USDCAD"], ["AUD", "A$", "Australian Dollar", "AUDUSD"],
+    ["NZD", "NZ$", "New Zealand Dollar", "NZDUSD"], ["CNY", "元", "Chinese Yuan", "USDCNY"],
+    ["HKD", "HK$", "Hong Kong Dollar", "USDHKD"], ["SGD", "S$", "Singapore Dollar", "USDSGD"],
+    ["KRW", "₩", "South Korean Won", "USDKRW"], ["INR", "₹", "Indian Rupee", "USDINR"],
+    ["TWD", "NT$", "New Taiwan Dollar", "USDTWD"], ["THB", "฿", "Thai Baht", "USDTHB"],
+    ["IDR", "Rp", "Indonesian Rupiah", "USDIDR"], ["PHP", "₱", "Philippine Peso", "USDPHP"],
+    ["MXN", "Mex$", "Mexican Peso", "USDMXN"], ["BRL", "R$", "Brazilian Real", "USDBRL"],
+    ["ZAR", "R", "South African Rand", "USDZAR"], ["TRY", "₺", "Turkish Lira", "USDTRY"],
+    ["SEK", "kr", "Swedish Krona", "USDSEK"], ["NOK", "kr", "Norwegian Krone", "USDNOK"],
+    ["DKK", "kr", "Danish Krone", "USDDKK"], ["PLN", "zł", "Polish Złoty", "USDPLN"],
+    ["ILS", "₪", "Israeli New Shekel", "USDILS"]
+  ];
   var HOUR = 3600000;
 
   function rng(seed) {
@@ -278,6 +363,41 @@ author_profile: true
     $("lucky-stock-code").textContent = stock[0] + ":JP · Nikkei 225";
     $("lucky-stock-link").href = url;
     $("lucky-stock-url").textContent = url.replace("https://www.", "");
+
+    var fx = CURRENCIES[Math.floor(r() * CURRENCIES.length)];
+    var pair = fx[3].slice(0, 3) + "/" + fx[3].slice(3);
+    var fxUrl = "https://www.bloomberg.com/quote/" + fx[3] + ":CUR";
+    var glyph = $("lucky-fx-glyph");
+    glyph.textContent = fx[1];
+    glyph.classList.toggle("is-long", fx[1].length > 2);
+    $("lucky-fx-name").textContent = fx[2];
+    $("lucky-fx-code").textContent = fx[0] + " · " + pair;
+    $("lucky-fx-link").href = fxUrl;
+    $("lucky-fx-url").textContent = fxUrl.replace("https://www.", "");
+  }
+
+  function setupFlip() {
+    var flip = $("lucky-flip");
+    var faces = { front: $("lucky-front"), back: $("lucky-back") };
+    var buttons = { front: $("lucky-flip-to-back"), back: $("lucky-flip-to-front") };
+
+    function show(side) {
+      var hidden = side === "front" ? "back" : "front";
+      flip.classList.toggle("is-flipped", side === "back");
+      faces[side].removeAttribute("aria-hidden");
+      faces[hidden].setAttribute("aria-hidden", "true");
+      faces[side].querySelectorAll("a, button").forEach(function (el) { el.removeAttribute("tabindex"); });
+      faces[hidden].querySelectorAll("a, button").forEach(function (el) { el.setAttribute("tabindex", "-1"); });
+    }
+
+    flip.addEventListener("click", function (e) {
+      if (e.target.closest("a")) { return; }
+      var side = flip.classList.contains("is-flipped") ? "front" : "back";
+      show(side);
+      if (e.target.closest("button")) { buttons[side].focus({ preventScroll: true }); }
+    });
+
+    show("front");
   }
 
   function tick() {
@@ -333,6 +453,7 @@ author_profile: true
 
   drawWheel();
   render();
+  setupFlip();
   setInterval(tick, 1000);
 })();
 </script>
