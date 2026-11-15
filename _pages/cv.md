@@ -120,9 +120,12 @@ T. Nishiyama, and W. Okamoto), 2021.
 
 ---
 
-## Seminar Presentations
+## Presentations
 
-**2026** — Sophia University
+**2027** — Yokohama City University\*  
+**2026** — Midwest Macroeconomics Meetings (Fall), Sophia University
+
+<small>\* Scheduled</small>
 
 ---
 
