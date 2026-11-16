@@ -315,7 +315,7 @@ author_profile: true
     <div class="lucky-flip" id="lucky-flip">
       <div class="lucky-flip-inner">
         <div class="lucky-card lucky-front" id="lucky-front">
-          <p class="lucky-label">Your lucky stock this hour</p>
+          <p class="lucky-label">Your lucky stock</p>
           <div class="lucky-glyph">🪄</div>
           <p class="lucky-name" id="lucky-stock-name">…</p>
           <span class="lucky-code" id="lucky-stock-code"></span><br>
@@ -324,7 +324,7 @@ author_profile: true
           <button type="button" class="lucky-flip-btn" id="lucky-flip-to-back">↻ Tap to flip the card</button>
         </div>
         <div class="lucky-card lucky-back" id="lucky-back" aria-hidden="true">
-          <p class="lucky-label">Your lucky currency this hour</p>
+          <p class="lucky-label">Your lucky currency</p>
           <div class="lucky-glyph is-text" id="lucky-fx-glyph">¤</div>
           <p class="lucky-name" id="lucky-fx-name">…</p>
           <span class="lucky-code" id="lucky-fx-code"></span><br>
