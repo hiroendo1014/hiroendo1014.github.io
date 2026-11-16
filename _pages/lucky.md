@@ -232,6 +232,51 @@ author_profile: true
   @media (prefers-reduced-motion: reduce) {
     .lucky-flip-inner { transition: none; }
   }
+  .lucky-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.9em 1.4em;
+    margin: 0 0 1.6em;
+    padding: 1em 1.2em;
+    border: 1px solid rgba(245, 212, 138, 0.3);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .lucky-field { display: flex; flex-direction: column; gap: 0.35em; text-align: left; }
+  #lucky-page .lucky-field label {
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.68em;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #f5d48a;
+    margin: 0;
+  }
+  #lucky-page .lucky-field input,
+  #lucky-page .lucky-field select {
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.95em;
+    color: #ece8ff;
+    background: rgba(13, 10, 36, 0.7);
+    border: 1px solid rgba(245, 212, 138, 0.45);
+    border-radius: 10px;
+    padding: 0.45em 0.7em;
+    margin: 0;
+    width: auto;
+    min-width: 10em;
+    color-scheme: dark;
+    box-shadow: none;
+  }
+  #lucky-page .lucky-field input:focus,
+  #lucky-page .lucky-field select:focus { outline: 2px solid #f5d48a; outline-offset: 1px; }
+  #lucky-page .lucky-aura {
+    font-size: 1.15em;
+    font-style: italic;
+    line-height: 1.4;
+    color: #ece8ff;
+    margin: 0.9em 0 0;
+  }
 </style>
 
 <div class="lucky-sky" aria-hidden="true">
@@ -241,20 +286,36 @@ author_profile: true
 </div>
 
 <div id="lucky-page">
-  <p class="lucky-intro">The stars have been consulted. A new reading is revealed every hour.</p>
+  <p class="lucky-intro">Tell the stars when you were born. Your lucky stock and currency are revealed anew every hour.</p>
+
+  <form class="lucky-form" id="lucky-form" onsubmit="return false;">
+    <div class="lucky-field">
+      <label for="lucky-birth">Date of birth</label>
+      <input type="date" id="lucky-birth" value="2001-10-14" min="1900-01-01" max="2100-12-31">
+    </div>
+    <div class="lucky-field">
+      <label for="lucky-gender">Gender</label>
+      <select id="lucky-gender">
+        <option value="male" selected>Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  </form>
 
   <div class="lucky-grid">
     <div class="lucky-card">
-      <p class="lucky-label">This hour's lucky sign</p>
+      <p class="lucky-label">Your birth sign</p>
       <div class="lucky-glyph" id="lucky-sign-glyph">✦</div>
       <p class="lucky-name" id="lucky-sign-name">…</p>
       <p class="lucky-sub" id="lucky-sign-dates"></p>
+      <p class="lucky-aura" id="lucky-sign-aura"></p>
     </div>
 
     <div class="lucky-flip" id="lucky-flip">
       <div class="lucky-flip-inner">
         <div class="lucky-card lucky-front" id="lucky-front">
-          <p class="lucky-label">This hour's lucky stock</p>
+          <p class="lucky-label">Your lucky stock this hour</p>
           <div class="lucky-glyph">🪄</div>
           <p class="lucky-name" id="lucky-stock-name">…</p>
           <span class="lucky-code" id="lucky-stock-code"></span><br>
@@ -263,7 +324,7 @@ author_profile: true
           <button type="button" class="lucky-flip-btn" id="lucky-flip-to-back">↻ Tap to flip the card</button>
         </div>
         <div class="lucky-card lucky-back" id="lucky-back" aria-hidden="true">
-          <p class="lucky-label">This hour's lucky currency</p>
+          <p class="lucky-label">Your lucky currency this hour</p>
           <div class="lucky-glyph is-text" id="lucky-fx-glyph">¤</div>
           <p class="lucky-name" id="lucky-fx-name">…</p>
           <span class="lucky-code" id="lucky-fx-code"></span><br>
@@ -283,18 +344,18 @@ author_profile: true
 <script>
 (function () {
   var SIGNS = [
-    ["♈", "Aries", "Mar 21 – Apr 19"],
-    ["♉", "Taurus", "Apr 20 – May 20"],
-    ["♊", "Gemini", "May 21 – Jun 20"],
-    ["♋", "Cancer", "Jun 21 – Jul 22"],
-    ["♌", "Leo", "Jul 23 – Aug 22"],
-    ["♍", "Virgo", "Aug 23 – Sep 22"],
-    ["♎", "Libra", "Sep 23 – Oct 22"],
-    ["♏", "Scorpio", "Oct 23 – Nov 21"],
-    ["♐", "Sagittarius", "Nov 22 – Dec 21"],
-    ["♑", "Capricorn", "Dec 22 – Jan 19"],
-    ["♒", "Aquarius", "Jan 20 – Feb 18"],
-    ["♓", "Pisces", "Feb 19 – Mar 20"]
+    ["♈", "Aries", "Mar 21 – Apr 19", 3, 21, "A blazing red aura of courage that charges in before the doubts arrive."],
+    ["♉", "Taurus", "Apr 20 – May 20", 4, 20, "A deep emerald aura of calm, steady as fertile earth."],
+    ["♊", "Gemini", "May 21 – Jun 20", 5, 21, "A flickering yellow aura of curiosity, always mid-conversation."],
+    ["♋", "Cancer", "Jun 21 – Jul 22", 6, 21, "A silvery moonlit aura that shelters everyone it touches."],
+    ["♌", "Leo", "Jul 23 – Aug 22", 7, 23, "A radiant golden aura that fills the room like sunlight."],
+    ["♍", "Virgo", "Aug 23 – Sep 22", 8, 23, "A clear sage-green aura of quiet precision and care."],
+    ["♎", "Libra", "Sep 23 – Oct 22", 9, 23, "A soft rose-pink aura of harmony, balancing every scale it meets."],
+    ["♏", "Scorpio", "Oct 23 – Nov 21", 10, 23, "A smoldering crimson aura of depth, intensity and secrets kept."],
+    ["♐", "Sagittarius", "Nov 22 – Dec 21", 11, 22, "A bright violet aura of adventure, aimed at the far horizon."],
+    ["♑", "Capricorn", "Dec 22 – Jan 19", 12, 22, "A dark garnet aura of ambition, climbing patiently toward the summit."],
+    ["♒", "Aquarius", "Jan 20 – Feb 18", 1, 20, "An electric turquoise aura of originality, a few years ahead of its time."],
+    ["♓", "Pisces", "Feb 19 – Mar 20", 2, 19, "A shimmering sea-blue aura of dreams and intuition."]
   ];
   var STOCKS = [
     ["7203", "Toyota Motor"], ["6758", "Sony Group"], ["9984", "SoftBank Group"],
@@ -363,12 +424,40 @@ author_profile: true
   function $(id) { return document.getElementById(id); }
 
   var shownHour = -1;
+  var DEFAULT_BIRTH = "2001-10-14";
+  var DEFAULT_GENDER = "male";
+  var STORE_KEY = "lucky-profile";
+
+  function hashString(str) {
+    var h = 2166136261;
+    for (var i = 0; i < str.length; i++) {
+      h ^= str.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return h >>> 0;
+  }
+
+  function readBirth() {
+    var v = $("lucky-birth").value;
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v);
+    if (!m) { v = DEFAULT_BIRTH; m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v); }
+    return { iso: v, month: +m[2], day: +m[3] };
+  }
+
+  function birthSign(month, day) {
+    var idx = -1;
+    SIGNS.forEach(function (s, i) { if (s[3] === month) { idx = day >= s[4] ? i : (i + 11) % 12; } });
+    return SIGNS[idx < 0 ? 6 : idx];
+  }
 
   function render() {
     var hour = Math.floor(Date.now() / HOUR);
     shownHour = hour;
-    var r = rng(hour * 2654435761);
-    var sign = SIGNS[Math.floor(r() * SIGNS.length)];
+    var birth = readBirth();
+    var gender = $("lucky-gender").value || DEFAULT_GENDER;
+    var sign = birthSign(birth.month, birth.day);
+    $("lucky-sign-aura").textContent = sign[5];
+    var r = rng(hashString(birth.iso + "|" + gender + "|" + hour));
     var stock = STOCKS[Math.floor(r() * STOCKS.length)];
     var url = "https://www.bloomberg.com/quote/" + stock[0] + ":JP";
 
@@ -414,6 +503,23 @@ author_profile: true
     });
 
     show("front");
+  }
+
+  function setupForm() {
+    var birthEl = $("lucky-birth");
+    var genderEl = $("lucky-gender");
+    try {
+      var saved = JSON.parse(localStorage.getItem(STORE_KEY) || "null");
+      if (saved && /^\d{4}-\d{2}-\d{2}$/.test(saved.birth)) { birthEl.value = saved.birth; }
+      if (saved && ["male", "female", "other"].indexOf(saved.gender) >= 0) { genderEl.value = saved.gender; }
+    } catch (e) {}
+    function update() {
+      try { localStorage.setItem(STORE_KEY, JSON.stringify({ birth: birthEl.value, gender: genderEl.value })); } catch (e) {}
+      render();
+    }
+    birthEl.addEventListener("change", update);
+    birthEl.addEventListener("input", update);
+    genderEl.addEventListener("change", update);
   }
 
   function tick() {
@@ -468,6 +574,7 @@ author_profile: true
   }
 
   drawWheel();
+  setupForm();
   render();
   setupFlip();
   setInterval(tick, 1000);
