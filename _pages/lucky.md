@@ -72,7 +72,7 @@ author_profile: true
     height: min(120vmin, 1100px);
     transform: translate(-50%, -50%);
     opacity: 0.16;
-    animation: lucky-spin 240s linear infinite;
+    animation: lucky-spin 120s linear infinite;
   }
   @keyframes lucky-twinkle { from { opacity: 0.35; } to { opacity: 0.85; } }
   @keyframes lucky-spin {
