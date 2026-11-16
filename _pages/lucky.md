@@ -331,7 +331,23 @@ author_profile: true
     ["ZAR", "R", "South African Rand", "USDZAR"], ["TRY", "₺", "Turkish Lira", "USDTRY"],
     ["SEK", "kr", "Swedish Krona", "USDSEK"], ["NOK", "kr", "Norwegian Krone", "USDNOK"],
     ["DKK", "kr", "Danish Krone", "USDDKK"], ["PLN", "zł", "Polish Złoty", "USDPLN"],
-    ["ILS", "₪", "Israeli New Shekel", "USDILS"]
+    ["ILS", "₪", "Israeli New Shekel", "USDILS"], ["CZK", "Kč", "Czech Koruna", "USDCZK"],
+    ["HUF", "Ft", "Hungarian Forint", "USDHUF"], ["RON", "lei", "Romanian Leu", "USDRON"],
+    ["ISK", "kr", "Icelandic Króna", "USDISK"], ["RSD", "din", "Serbian Dinar", "USDRSD"],
+    ["UAH", "₴", "Ukrainian Hryvnia", "USDUAH"], ["GEL", "₾", "Georgian Lari", "USDGEL"],
+    ["KZT", "₸", "Kazakhstani Tenge", "USDKZT"], ["MNT", "₮", "Mongolian Tögrög", "USDMNT"],
+    ["MYR", "RM", "Malaysian Ringgit", "USDMYR"], ["VND", "₫", "Vietnamese Đồng", "USDVND"],
+    ["MOP", "MOP$", "Macanese Pataca", "USDMOP"], ["PKR", "₨", "Pakistani Rupee", "USDPKR"],
+    ["BDT", "৳", "Bangladeshi Taka", "USDBDT"], ["LKR", "Rs", "Sri Lankan Rupee", "USDLKR"],
+    ["NPR", "रू", "Nepalese Rupee", "USDNPR"], ["SAR", "SR", "Saudi Riyal", "USDSAR"],
+    ["AED", "د.إ", "UAE Dirham", "USDAED"], ["QAR", "QR", "Qatari Riyal", "USDQAR"],
+    ["KWD", "KD", "Kuwaiti Dinar", "USDKWD"], ["BHD", "BD", "Bahraini Dinar", "USDBHD"],
+    ["OMR", "RO", "Omani Rial", "USDOMR"], ["JOD", "JD", "Jordanian Dinar", "USDJOD"],
+    ["EGP", "E£", "Egyptian Pound", "USDEGP"], ["MAD", "DH", "Moroccan Dirham", "USDMAD"],
+    ["NGN", "₦", "Nigerian Naira", "USDNGN"], ["KES", "KSh", "Kenyan Shilling", "USDKES"],
+    ["GHS", "₵", "Ghanaian Cedi", "USDGHS"], ["CLP", "CLP$", "Chilean Peso", "USDCLP"],
+    ["COP", "COL$", "Colombian Peso", "USDCOP"], ["PEN", "S/", "Peruvian Sol", "USDPEN"],
+    ["ARS", "AR$", "Argentine Peso", "USDARS"], ["UYU", "$U", "Uruguayan Peso", "USDUYU"]
   ];
   var HOUR = 3600000;
 
