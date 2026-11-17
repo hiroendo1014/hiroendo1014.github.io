@@ -232,6 +232,90 @@ author_profile: true
   @media (prefers-reduced-motion: reduce) {
     .lucky-flip-inner { transition: none; }
   }
+  #lucky-page .lucky-go {
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.95em;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.5em 1.6em;
+    margin: 0;
+    border: 0;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #f5d48a, #e7a9ff);
+    color: #1a1145;
+    cursor: pointer;
+    box-shadow: 0 0 22px rgba(231, 169, 255, 0.45);
+  }
+  #lucky-page .lucky-go:hover { filter: brightness(1.08); }
+  #lucky-page .lucky-go:focus-visible { outline: 2px solid #f5d48a; outline-offset: 3px; }
+  .lucky-flip { position: relative; }
+  .lucky-cloud {
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: rgba(34, 24, 80, 0.6);
+    cursor: default;
+  }
+  .lucky-grid.is-veiled .lucky-cloud { display: block; }
+  .lucky-puff {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: 85%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(240, 236, 255, 0.95) 0%, rgba(206, 196, 245, 0.75) 35%, rgba(150, 120, 230, 0) 70%);
+    filter: blur(6px);
+    transform: translate(-50%, -50%);
+    animation: lucky-drift 6s ease-in-out infinite alternate;
+  }
+  .lucky-puff:nth-child(2n) { animation-duration: 8s; animation-delay: -2s; }
+  .lucky-puff:nth-child(3n) { animation-duration: 7s; animation-delay: -4s; }
+  #lucky-page .lucky-cloud-hint {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #2a1d63;
+  }
+  .lucky-grid.is-veiled .lucky-card > :not(.lucky-cloud) { filter: blur(12px); opacity: 0.15; }
+  .lucky-grid.is-veiled.is-clearing .lucky-card > :not(.lucky-cloud) {
+    filter: none;
+    opacity: 1;
+    transition: filter 1.1s ease 1s, opacity 1.1s ease 1s;
+  }
+  .lucky-grid.is-clearing .lucky-cloud { animation: lucky-fog 2.2s ease forwards; pointer-events: none; }
+  .lucky-grid.is-clearing .lucky-puff { animation: lucky-clear 2.2s ease-in-out forwards; }
+  .lucky-grid.is-clearing .lucky-cloud-hint { opacity: 0; transition: opacity 0.4s; }
+  @keyframes lucky-drift {
+    to { transform: translate(calc(-50% + var(--dx) * 0.08), calc(-50% + var(--dy) * 0.08)) scale(1.08); }
+  }
+  @keyframes lucky-clear {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    35% { transform: translate(-50%, -50%) scale(1.4); opacity: 1; }
+    100% { transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.9); opacity: 0; }
+  }
+  @keyframes lucky-fog {
+    0% { background-color: rgba(34, 24, 80, 0.6); }
+    35% { background-color: rgba(70, 55, 140, 0.8); }
+    100% { background-color: rgba(34, 24, 80, 0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .lucky-puff, .lucky-grid.is-clearing .lucky-puff { animation: none; }
+    .lucky-grid.is-clearing .lucky-cloud { animation: none; opacity: 0; transition: opacity 0.3s; }
+    .lucky-grid.is-veiled.is-clearing .lucky-card > :not(.lucky-cloud) { transition: opacity 0.3s; }
+  }
   .lucky-form {
     display: flex;
     flex-wrap: wrap;
@@ -286,7 +370,7 @@ author_profile: true
 </div>
 
 <div id="lucky-page">
-  <p class="lucky-intro">Tell the stars when you were born. Your lucky stock and currency are revealed anew every hour.</p>
+  <p class="lucky-intro">Tell the stars when you were born, then press Go. Your lucky stock and currency are revealed anew every hour.</p>
 
   <form class="lucky-form" id="lucky-form" onsubmit="return false;">
     <div class="lucky-field">
@@ -301,10 +385,20 @@ author_profile: true
         <option value="other">Other</option>
       </select>
     </div>
+    <button type="button" class="lucky-go" id="lucky-go">Go</button>
   </form>
 
-  <div class="lucky-grid">
+  <div class="lucky-grid is-veiled" id="lucky-grid">
     <div class="lucky-card">
+      <div class="lucky-cloud" aria-hidden="true">
+        <span class="lucky-puff" style="--x:20%;--y:22%;--dx:-170px;--dy:-120px;"></span>
+        <span class="lucky-puff" style="--x:78%;--y:18%;--dx:170px;--dy:-130px;"></span>
+        <span class="lucky-puff" style="--x:50%;--y:50%;--dx:0px;--dy:-190px;"></span>
+        <span class="lucky-puff" style="--x:18%;--y:80%;--dx:-180px;--dy:140px;"></span>
+        <span class="lucky-puff" style="--x:82%;--y:82%;--dx:180px;--dy:130px;"></span>
+        <span class="lucky-puff" style="--x:50%;--y:92%;--dx:0px;--dy:200px;"></span>
+        <span class="lucky-cloud-hint">Press Go to part the clouds</span>
+      </div>
       <p class="lucky-label">Your birth sign</p>
       <div class="lucky-glyph" id="lucky-sign-glyph">✦</div>
       <p class="lucky-name" id="lucky-sign-name">…</p>
@@ -332,6 +426,15 @@ author_profile: true
           <p class="lucky-fineprint">Another <strong>Bloomstickberg</strong> pick: a real link to <span id="lucky-fx-url">bloomberg.com</span> for its exchange rate with the US dollar, chosen by the same magic stick.</p>
           <button type="button" class="lucky-flip-btn" id="lucky-flip-to-front" tabindex="-1">↻ Tap to flip back</button>
         </div>
+      </div>
+      <div class="lucky-cloud" aria-hidden="true">
+        <span class="lucky-puff" style="--x:20%;--y:22%;--dx:-170px;--dy:-120px;"></span>
+        <span class="lucky-puff" style="--x:78%;--y:18%;--dx:170px;--dy:-130px;"></span>
+        <span class="lucky-puff" style="--x:50%;--y:50%;--dx:0px;--dy:-190px;"></span>
+        <span class="lucky-puff" style="--x:18%;--y:80%;--dx:-180px;--dy:140px;"></span>
+        <span class="lucky-puff" style="--x:82%;--y:82%;--dx:180px;--dy:130px;"></span>
+        <span class="lucky-puff" style="--x:50%;--y:92%;--dx:0px;--dy:200px;"></span>
+        <span class="lucky-cloud-hint">Press Go to part the clouds</span>
       </div>
     </div>
   </div>
@@ -496,13 +599,40 @@ author_profile: true
     }
 
     flip.addEventListener("click", function (e) {
-      if (e.target.closest("a")) { return; }
+      if (e.target.closest("a") || $("lucky-grid").classList.contains("is-veiled")) { return; }
       var side = flip.classList.contains("is-flipped") ? "front" : "back";
       show(side);
       if (e.target.closest("button")) { buttons[side].focus({ preventScroll: true }); }
     });
 
     show("front");
+    return show;
+  }
+
+  var revealTimer = null;
+
+  function veil(showFlip) {
+    var grid = $("lucky-grid");
+    clearTimeout(revealTimer);
+    grid.classList.remove("is-clearing");
+    grid.classList.add("is-veiled");
+    if (showFlip) { showFlip("front"); }
+  }
+
+  function setupReveal(showFlip) {
+    var grid = $("lucky-grid");
+    var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    $("lucky-go").addEventListener("click", function () {
+      veil(showFlip);
+      void grid.offsetWidth;
+      grid.classList.add("is-clearing");
+      revealTimer = setTimeout(function () {
+        grid.classList.remove("is-veiled", "is-clearing");
+      }, reduced ? 400 : 2300);
+    });
+    ["lucky-birth", "lucky-gender"].forEach(function (id) {
+      $(id).addEventListener("change", function () { veil(showFlip); });
+    });
   }
 
   function setupForm() {
@@ -576,7 +706,7 @@ author_profile: true
   drawWheel();
   setupForm();
   render();
-  setupFlip();
+  setupReveal(setupFlip());
   setInterval(tick, 1000);
 })();
 </script>
