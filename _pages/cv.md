@@ -11,9 +11,7 @@ redirect_from:
 
 ## Personal Details
 **Name:** Hiroaki Eric Endo  
-**Born:** October 2001  
-**Email:** [hiroakiendo2030@u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)  
-**GitHub:** [github.com/hiroendo1014](https://github.com/hiroendo1014/)
+**Born:** October 2001
 
 **[Download CV (PDF)](../../files/CV_full.pdf)**
 
