@@ -13,9 +13,4 @@ Before coming to Northwestern, I completed my BA and MPhil in Economics at St Jo
 
 In my free time, I enjoy watching — and occasionally [playing](https://www.varsity.co.uk/sport/23709) — rugby union, usually at scrum-half. I have also played rugby league a few times.
 
-## Contact
-
-**Email:** [hiroakiendo2030 [at] u.northwestern.edu](mailto:hiroakiendo2030@u.northwestern.edu)  
-**GitHub:** [github.com/hiroendo1014](https://github.com/hiroendo1014/)
-
 ![](/images/about.JPG){: .float-photo }
